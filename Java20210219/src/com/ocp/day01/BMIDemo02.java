@@ -1,4 +1,4 @@
-package com.opc.day01;
+package com.ocp.day01;
 
 public class BMIDemo02 {
     public static void main(String[] args) {

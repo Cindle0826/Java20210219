@@ -1,4 +1,4 @@
-package com.opc.day02;
+package com.ocp.day02;
 //Data class
 //物件 = 實體, 實例, instance
 public class Student {

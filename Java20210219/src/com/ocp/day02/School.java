@@ -1,4 +1,4 @@
-package com.opc.day02;
+package com.ocp.day02;
 
 public class School {
     public static void main(String[] args) {
