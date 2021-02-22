@@ -16,22 +16,48 @@ public class Account {
 
 		// 驗證提款要件
 		// 1.驗證提款金額是否<=0
-		if(x <=0) {
+		if (x <= 0) {
 			System.out.println("提款金額錯誤");
-			return; //中斷方法
+			return; // 中斷方法
 		}
 		// 2.驗證x是否大於目前餘額?
-		if(x>money) {
+		if (x > money) {
 			System.out.println("提款金額不足");
 			return;
 		}
 		// 3.驗證x是否大於10萬?
-		if( x > 100_000) {
+		if (x > 100_000) {
 			System.out.println("提款金額不可超過10萬");
 			return;
 		}
 		// 進行提款程序
 		System.out.println("成功");
-		money -=x;
+		money -= x;
+	}
+
+	// 存款的方法
+	public void deposit(int x) {
+		System.out.printf("存款 $%d ", x);
+
+		// 驗證存款要件
+		// 1.驗證存款金額是否<=0
+		if (x <= 0) {
+			System.out.println("存款金額錯誤");
+			return; // 中斷方法
+		}
+		// 2.驗證存款金額是否是100的倍數
+		if (x %100 !=0) {
+			System.out.println("存款金額必須是100的倍數");
+			return;
+		}
+
+		// 3.驗證x是否大於10萬?
+		if (x > 100_000) {
+			System.out.println("存款金額不可超過10萬");
+			return;
+		}
+        // 進行存款程序
+        System.out.println("成功");
+        money += x;
 	}
 }
