@@ -24,9 +24,12 @@ public class ArrayDemo3 {
 		System.out.printf("及格的總分: %d\n", sum);
 		// Java 8
 		sum = IntStream.of(scores1).filter(s -> s >= 60).sum();
+//		sum = IntStream.of(scores1).sum();
 		System.out.printf("及格的總分: %d\n",sum);
 		// Java 8
 		avg = IntStream.of(scores1).filter(s -> s>=60).average().getAsDouble();
 		System.out.printf("及格的平均: %.1f\n",avg);
+		
+		
 	}
 }
