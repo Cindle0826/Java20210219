@@ -17,5 +17,6 @@ public class StringCompare {
 		System.out.println(s2.equalsIgnoreCase(s5));
 		System.out.println(s4.toUpperCase() == s5.toUpperCase()); //先轉大寫在比較
 		System.out.println(s4.toLowerCase().equals(s5.toLowerCase()));//先轉小在比較
+
 	}
 }
