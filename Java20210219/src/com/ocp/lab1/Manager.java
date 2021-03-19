@@ -17,9 +17,8 @@ public class Manager extends Employee {
 	}
 
 	public void setBudget(int budget) {
-		if(budget>0) {
-			this.budget=budget;
+		if (budget > 0) {
+			this.budget = budget;
 		}
 	}
-
 }

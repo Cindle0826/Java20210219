@@ -5,6 +5,7 @@ public class Director extends Manager {
 	private int stockOptions;
 
 	public Director(int salary) {
+
 		setSalary(salary);
 	}
 
@@ -16,6 +17,10 @@ public class Director extends Manager {
 		if (stockOptions > 0) {
 			this.stockOptions = stockOptions;
 		}
+
+
 	}
+
+
 
 }
