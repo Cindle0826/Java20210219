@@ -5,6 +5,7 @@ import java.util.stream.Stream;
 
 public class EmployeeUtil {
 
+
 	// 取得所有員工薪資
 	public int getAllSalary(Employee... employees) {
 //		// Java 7 
@@ -17,6 +18,7 @@ public class EmployeeUtil {
 		// Java 8
 //		return Stream.of(employees).mapToInt(s -> s.getSalary()).sum();
 		return Stream.of(employees).mapToInt(Employee::getSalary).sum();
+
 	}
 
 	// 取得所有經理(Manager)的薪資
