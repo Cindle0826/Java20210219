@@ -3,6 +3,7 @@ package com.ocp.lab1;
 import java.util.stream.Stream;
 
 public class EmployeeUtil {
+
 	//  取得所有員工薪資
 	public int getAllSalary(Employee...employees) {
 //		// Java 7 

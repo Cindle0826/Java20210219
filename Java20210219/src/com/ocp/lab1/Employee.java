@@ -9,6 +9,7 @@ public class Employee {
 	}
 
 	public Employee(int Salary) {
+
 		setSalary(salary);
 	}
 	
@@ -24,6 +25,10 @@ public class Employee {
 		if(salary>0) {
 			this.salary=salary;
 		}
+
+
 	}
+
+
 
 }
