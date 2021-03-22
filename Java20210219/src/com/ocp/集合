@@ -1,0 +1,8 @@
+										Collection 集合 (動態陣列)
+在集合裡面儲存的內容都是Object
+										
+Set			不可重複 從第一個開始由上往下走訪
+List		可重複	
+Map(鍵值)	結構（Key,Value）-> EntrySet  
+
+Thread Safe 容器是否安全
