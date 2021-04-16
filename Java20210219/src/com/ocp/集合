@@ -1,8 +1,22 @@
 										Collection 集合 (動態陣列)
 在集合裡面儲存的內容都是Object
-										
+
 Set			不可重複 從第一個開始由上往下走訪   HashSet無排序(C U D 快) LinkedHashSet有排序 set有排序 TreeSet自然排序(Select快)
-List		可重複	
-Map(鍵值)	結構（Key,Value）-> EntrySet  
+
+List		可重複		ArrayList 	Queue(先進先出(佇列))實作LinkedList Vector繼承Stack(先進後出)
+Map(鍵值)	結構（Key,Value）-> Set<Map.Entry<K,V>> (EntrySet)  
 
 Thread Safe 容器是否安全
+
+Collections 集合的外包類別可以用來排序 
+		sort
+		Comparator compare排序(o1,o2) NaturalOrder自然排序 reverseOrder反向排序
+		collect toList()
+
+@Functional Interface 只有單一抽象方法才能用Lambda
+	ToIntFunction 輸出一個int
+	1.自定義的物件方法
+	2.static的方法不算
+	3.default方法不算
+	4.object方法不算
+			
